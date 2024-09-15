@@ -61,7 +61,7 @@ class MessageWindow(tk.Canvas):
         self._create_message_bubble(container, message_content, message_time, message_labels)
 
     def _create_message_bubble(self, container, message_content, message_time, message_labels):
-        avatar_image = Image.open("./GUI Course/chatapp/assets/image.png").resize((35,35))
+        avatar_image = Image.open("./chatapp/assets/image.png").resize((35,35))
         avatar_photo = ImageTk.PhotoImage(avatar_image)
         avatar_label = ttk.Label(container, image=avatar_photo, style="Avatar.TLabel")
         avatar_label.image = avatar_photo
